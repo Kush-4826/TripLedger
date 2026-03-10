@@ -52,12 +52,11 @@ Repositories responsibilities:
 
 # Authentication Rules
 
-Authentication uses Laravel authentication with refresh tokens.
+Authentication uses Laravel's session-based stateful authentication (Sanctum/Cookies) to seamlessly integrate with Inertia.js.
 
 Requirements:
 
 - login endpoint
-- refresh token endpoint
 - logout endpoint
 
 Signup must NOT be publicly accessible.
@@ -78,10 +77,18 @@ Cancelled
 
 Rules:
 
-- Only one trip may be Active at a time
+- Only one trip may be Active at a time. The API must gracefully handle concurrent start attempts (e.g. returning 409 Conflict if another trip is active).
 - Draft trips are editable
 - Editing a Planned trip moves it back to Draft
+- Active trips allow modifications to future planned `trip_days` without reverting the trip status.
 - Completed trips cannot be edited
+- Chronological sorting of trip days and logs must be driven by the `date` column, NOT the `day_number` (to cleanly handle Day 0 or non-sequential days).
+
+---
+
+# Expense Rules
+
+- All expenses must be manually converted to the home currency (INR) by the user before entry into the system.
 
 ---
 
@@ -137,3 +144,11 @@ Map providers allowed:
 
 - OpenStreetMap
 - Google Maps
+
+---
+
+# PWA & Offline Support Rules
+
+Offline support is restricted to aggressive caching of read-only views. Active logging (creating trips, days, logs, expenses) requires an active internet connection, as Inertia.js is not built for robust offline store-and-forward mutations.
+
+However, when processing timestamps, the backend logic must strictly trust client-provided timestamps (`expense_time` and `date`) for chronological ordering and sorting algorithms instead of relying primarily on the database `created_at` timestamp.

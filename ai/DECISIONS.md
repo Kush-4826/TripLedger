@@ -20,6 +20,26 @@ SPA experience without building a separate API client.
 
 ---
 
+## Authentication
+
+Decision:
+Session-based authentication (Cookies/Sanctum).
+
+Reason:
+Works natively with Inertia.js and avoids the complexity of manual refresh token management.
+
+---
+
+## Timezones
+
+Decision:
+Store all datetimes in UTC in the database, handle localized display on the frontend.
+
+Reason:
+Future-proofs the application for long cross-border trips where timezone shifts occur, ensuring statistics match proper dates.
+
+---
+
 ## Database
 
 Decision:

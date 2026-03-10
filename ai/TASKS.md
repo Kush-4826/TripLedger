@@ -12,8 +12,8 @@ Project: RideLedger
 [ ] Setup MySQL connection
 [ ] Setup local storage for images
 [ ] Setup authentication system
-[ ] Implement login endpoint
-[ ] Implement refresh token system
+[ ] Implement login/logout endpoints
+[ ] Implement session-based stateful authentication (Sanctum/Cookies)
 [ ] Disable public signup
 [ ] Create initial admin user seeder
 
@@ -62,6 +62,7 @@ Expense
 [ ] Implement trip editing
 [ ] Implement trip status management
 [ ] Implement trip day planner
+[ ] Implement batch trip itinerary update API
 [ ] Add itinerary notes
 [ ] Add recommended places
 [ ] Add trip tips

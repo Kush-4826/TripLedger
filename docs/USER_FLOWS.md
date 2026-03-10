@@ -40,6 +40,18 @@ Only one trip may be Active.
 
 ---
 
+## 4. Edit Active Itinerary
+
+User → Open Active Trip  
+User → Edit future planned route/days  
+
+Trip → Status remains Active  
+
+User → Modify details  
+User → Save  
+
+---
+
 ## 4. Daily Ride Logging
 
 User → Open Active Trip  
@@ -79,7 +91,7 @@ Expense is linked to that day.
 
 ## 6. Add Media Links
 
-User → Open Daily Log  
+User → Open Trip OR Daily Log  
 User → Add Media Link  
 
 User pastes:
@@ -88,7 +100,7 @@ User pastes:
 - photo album link
 - video link
 
-Multiple links may be added.
+Media can be tied generally to the **entire Trip** or to a **specific Daily Log**. Multiple links may be added.
 
 ---
 

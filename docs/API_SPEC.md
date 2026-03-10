@@ -2,7 +2,7 @@
 
 Base URL
 
-/api
+/ (Standard web routes for Inertia.js)
 
 ---
 
@@ -51,6 +51,9 @@ Cancel trip
 GET /trips/{id}/days
 
 POST /trips/{id}/days
+
+PUT /trips/{id}/itinerary
+(Batch update/upsert multiple days for efficient planning)
 
 PUT /trip-days/{id}
 
