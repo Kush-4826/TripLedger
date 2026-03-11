@@ -32,6 +32,9 @@ export default function ForgotPassword({ status }) {
             )}
 
             <form onSubmit={submit}>
+                <h2 className="mb-6 text-center text-2xl font-black uppercase text-black dark:text-white">
+                    Forgot Password
+                </h2>
                 <TextInput
                     id="email"
                     type="email"

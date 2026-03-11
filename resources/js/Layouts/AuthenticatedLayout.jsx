@@ -12,14 +12,14 @@ export default function AuthenticatedLayout({ header, children }) {
         useState(false);
 
     return (
-        <div className="min-h-screen bg-gray-100">
-            <nav className="border-b border-gray-100 bg-white">
+        <div className="min-h-screen bg-brand-beige dark:bg-brand-darkBg text-black dark:text-white">
+            <nav className="border-b-4 border-black bg-white dark:border-white dark:bg-brand-darkCard">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex h-16 justify-between">
                         <div className="flex">
                             <div className="flex shrink-0 items-center">
                                 <Link href="/">
-                                    <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800" />
+                                    <ApplicationLogo className="block h-9 w-auto fill-current text-black dark:text-white" />
                                 </Link>
                             </div>
 
@@ -40,7 +40,7 @@ export default function AuthenticatedLayout({ header, children }) {
                                         <span className="inline-flex rounded-md">
                                             <button
                                                 type="button"
-                                                className="inline-flex items-center rounded-md border border-transparent bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:outline-none"
+                                                className="inline-flex items-center border border-transparent bg-transparent px-3 py-2 text-sm font-bold uppercase leading-4 text-black transition duration-150 ease-in-out hover:text-brand-pink focus:outline-none dark:text-white dark:hover:text-brand-neonGreen"
                                             >
                                                 {user.name}
 
@@ -138,10 +138,10 @@ export default function AuthenticatedLayout({ header, children }) {
 
                     <div className="border-t border-gray-200 pb-1 pt-4">
                         <div className="px-4">
-                            <div className="text-base font-medium text-gray-800">
-                                {user.name}
-                            </div>
-                            <div className="text-sm font-medium text-gray-500">
+                                <div className="text-base font-bold uppercase text-black dark:text-white">
+                                    {user.name}
+                                </div>
+                                <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
                                 {user.email}
                             </div>
                         </div>
@@ -163,7 +163,7 @@ export default function AuthenticatedLayout({ header, children }) {
             </nav>
 
             {header && (
-                <header className="bg-white shadow">
+                <header className="border-b-2 border-black bg-white dark:border-white dark:bg-brand-darkCard">
                     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
                         {header}
                     </div>
