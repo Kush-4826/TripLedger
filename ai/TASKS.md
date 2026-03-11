@@ -6,16 +6,16 @@ Project: RideLedger
 
 # Phase 1 — Project Setup
 
-[ ] Initialize Laravel project
-[ ] Setup React + Inertia
-[ ] Configure TailwindCSS
-[ ] Setup MySQL connection
-[ ] Setup local storage for images
-[ ] Setup authentication system
-[ ] Implement login/logout endpoints
-[ ] Implement session-based stateful authentication (Sanctum/Cookies)
-[ ] Disable public signup
-[ ] Create initial admin user seeder
+[X] Initialize Laravel project
+[X] Setup React + Inertia
+[X] Configure TailwindCSS
+[X] Setup MySQL connection
+[X] Setup local storage for images
+[X] Setup authentication system
+[X] Implement login/logout endpoints
+[X] Implement session-based stateful authentication (Sanctum/Cookies)
+[X] Disable public signup
+[X] Create initial admin user seeder
 
 ---
 
