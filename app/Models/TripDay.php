@@ -34,4 +34,9 @@ class TripDay extends Model
     {
         return $query->orderBy('date', 'asc');
     }
+
+    public function log()
+    {
+        return $this->hasOne(TripLog::class, 'trip_id', 'trip_id')->where('date', $this->date);
+    }
 }

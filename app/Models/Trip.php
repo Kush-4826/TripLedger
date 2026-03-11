@@ -54,6 +54,11 @@ class Trip extends Model
         return $this->hasMany(TripMediaLink::class);
     }
 
+    public function expenses()
+    {
+        return $this->hasManyThrough(Expense::class, TripLog::class);
+    }
+
     public function statistics()
     {
         return $this->hasOne(TripStatistic::class);
@@ -83,5 +88,16 @@ class Trip extends Model
     public function scopeCancelled($query)
     {
         return $query->where('status', 'cancelled');
+    }
+
+    // Helpers
+    public function isActive()
+    {
+        return $this->status === 'active';
+    }
+
+    public function isEditable()
+    {
+        return !in_array($this->status, ['completed', 'cancelled']);
     }
 }
