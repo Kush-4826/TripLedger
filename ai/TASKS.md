@@ -33,12 +33,12 @@ Project: RideLedger
 
 # Phase 3 — Models and Relationships
 
-[ ] Create Trip model
-[ ] Create TripDay model
-[ ] Create TripLog model
-[ ] Create MediaLink model
-[ ] Create Expense model
-[ ] Create ExpenseCategory model
+[x] Create Trip model
+[x] Create TripDay model
+[x] Create TripLog model
+[x] Create MediaLink model
+[x] Create Expense model
+[x] Create ExpenseCategory model
 
 Add relationships:
 
