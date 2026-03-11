@@ -15,6 +15,7 @@ Database
 
 Styling
 - TailwindCSS
+- Custom Neubrutalism Theme (Space Grotesk font, High contrast borders/shadows, Light/Dark modes)
 
 Storage
 - Local filesystem storage for images

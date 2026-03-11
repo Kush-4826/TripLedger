@@ -26,6 +26,9 @@ export default function ResetPassword({ token, email }) {
             <Head title="Reset Password" />
 
             <form onSubmit={submit}>
+                <h2 className="mb-6 text-center text-2xl font-black uppercase text-black dark:text-white">
+                    Reset Password
+                </h2>
                 <div>
                     <InputLabel htmlFor="email" value="Email" />
 

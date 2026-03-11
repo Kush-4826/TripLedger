@@ -32,6 +32,9 @@ export default function Login({ status, canResetPassword }) {
             )}
 
             <form onSubmit={submit}>
+                <h2 className="mb-6 text-center text-2xl font-black uppercase text-black dark:text-white">
+                    Secret Door
+                </h2>
                 <div>
                     <InputLabel htmlFor="email" value="Email" />
 
@@ -84,7 +87,7 @@ export default function Login({ status, canResetPassword }) {
                     {canResetPassword && (
                         <Link
                             href={route('password.request')}
-                            className="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                            className="text-sm font-bold uppercase text-black underline transition-colors hover:text-brand-pink focus:outline-none dark:text-white dark:hover:text-brand-neonGreen"
                         >
                             Forgot your password?
                         </Link>

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-brand-beige text-black antialiased transition-colors duration-200;
+    }
+    .dark body {
+        @apply bg-brand-darkBg text-white;
+    }
+    
+    /* Ensure selection color matches neubrutalism vibe */
+    ::selection {
+        @apply bg-brand-yellow text-black;
+    }
+}
