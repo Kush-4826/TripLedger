@@ -1,5 +1,15 @@
 # Architecture Decisions
 
+## UI Design Language
+
+Decision:
+Neubrutalism (Neo-brutalism) with Light/Dark Mode toggling and Space Grotesk font.
+
+Reason:
+Provides a highly distinct, retro, and playful aesthetic compared to traditional SaaS designs, fitting the adventurous nature of motorcycle trips.
+
+---
+
 ## Backend Framework
 
 Decision:

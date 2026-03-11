@@ -121,7 +121,24 @@ Frontend responsibilities:
 
 ---
 
-# UI Guidelines
+# UI Guidelines & Neubrutalism Design
+
+TripLedger strictly follows the **Neubrutalism** (Neo-brutalism) design language. Future frontend developments MUST adhere to these rules:
+
+1. **Colors & Contrast**:
+   - Use high-contrast color pairings.
+   - Light Mode: Beige/off-white background with stark black borders and text. Accents should be highly vivid (Bright Yellow, Pink, Cyan).
+   - Dark Mode: Dark gray/black background with stark white borders and text. Accents should be neon (Neon Green, Bright Purple, Cyan).
+   - The application supports both Dark and Light themes.
+2. **Borders & Shadows**:
+   - Elements (cards, buttons, inputs) must have thick borders (`border-2` or `border-4`).
+   - Use bold, offset unblurred box-shadows (e.g., `shadow-[4px_4px_0px_0px_black]` in light mode, `shadow-[4px_4px_0px_0px_white]` in dark mode).
+3. **Typography**:
+   - The primary font is **Space Grotesk**. Text should be bold, highly legible, and unapologetic.
+4. **Shapes**:
+   - Corners can be sharp or slightly rounded, but not heavily pill-shaped.
+5. **Interactions**:
+   - Hover effects should provide physical "press" animations (e.g., translating X and Y to overlay the shadow, and removing the shadow).
 
 The UI must work well on:
 
