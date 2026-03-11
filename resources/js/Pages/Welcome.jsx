@@ -14,6 +14,13 @@ export default function Welcome({ auth, canRegister }) {
                 <div className="absolute left-1/2 top-10 h-8 w-24 -translate-x-1/2 rotate-6 border-4 border-black bg-white shadow-neubrutalism-sm dark:border-white dark:bg-brand-darkCard dark:shadow-neubrutalism-dark-sm md:top-16 md:h-10 md:w-32 lg:top-24"></div>
 
                 <div className="relative z-10 w-full max-w-4xl border-4 border-black bg-white p-12 text-center shadow-neubrutalism-lg dark:border-white dark:bg-brand-darkCard dark:shadow-neubrutalism-dark-lg">
+                    <div className="mb-8 flex justify-center">
+                        <img 
+                            src="/android-chrome-512x512.png" 
+                            alt="TripLedger Logo" 
+                            className="h-32 w-32 md:h-48 md:w-48 object-contain drop-shadow-md"
+                        />
+                    </div>
                     <h1 className="mb-6 text-5xl font-black uppercase tracking-tight text-black dark:text-white md:text-7xl">
                         TripLedger
                     </h1>
