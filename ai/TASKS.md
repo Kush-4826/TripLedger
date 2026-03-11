@@ -21,13 +21,13 @@ Project: RideLedger
 
 # Phase 2 — Core Database
 
-[ ] Create trips table
-[ ] Create trip_days table
-[ ] Create trip_logs table
-[ ] Create trip_media_links table
-[ ] Create expense_categories table
-[ ] Create expenses table
-[ ] Create trip_statistics table
+[x] Create trips table
+[x] Create trip_days table
+[x] Create trip_logs table
+[x] Create trip_media_links table
+[x] Create expense_categories table
+[x] Create expenses table
+[x] Create trip_statistics table
 
 ---
 
